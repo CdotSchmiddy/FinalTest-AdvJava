@@ -1,6 +1,7 @@
 //Calum Schmidtke - 200366773
 package Final;
 
+//Add relative imports
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -36,6 +37,7 @@ public class Controller implements Initializable {
     private Label inventoryLabel;
 
     @Override
+    //Controller initialize method
     public void initialize(URL location, ResourceBundle resources) {
         brandComboBox.setPromptText("Select Brand");
         brandComboBox.getItems().addAll(carLot.getBrands());
@@ -48,7 +50,7 @@ public class Controller implements Initializable {
 
         loadInventory();
     }
-
+    //Supposed to load the TableView object with instances of Cars depending on genre selected from ComboBox
     public void loadInventory() {
         ObservableList<Car> cars = FXCollections.observableArrayList();
 

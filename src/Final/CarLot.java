@@ -12,15 +12,18 @@ public class CarLot {
         this.menu = menu;
     }
 
+    //Method for "All Brands" or other key brands
     public Set<String> getBrands() {
         Set<String> carBrands = menu.keySet();
         return carBrands;
     }
 
+    //Method for car objects
     public TreeSet<Car> getCars(Car brand){
         return null;
     }
 
+    //Selling car, minusing car by and price by car price
     public void sellCar(Car car) {
         if (car.getPriceDouble() != 0) {
 
